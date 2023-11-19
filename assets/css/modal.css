@@ -1,0 +1,105 @@
+.container{
+    position: fixed;
+    top:0;
+    background-color: rgba(0,0,0,.5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal{
+    position: relative;
+    color: white;
+    width: 90%;
+    max-width: 860px;
+    height: 70%;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-top: 1rem;
+}
+#modal--close{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 10px;
+}
+.modal--pokemon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal--pokemon img{
+    width: 50%;
+    max-height: 60%;
+}
+.modal--pokemon--title{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.3rem;
+    
+}
+
+.modal-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: normal; 
+}
+
+.modal-table th,
+.modal-table td {
+    padding: 10px 2px;
+    border-bottom: 1px solid #ddd;
+    border: 1px solid #ddd; 
+    font-size: 8px;
+    
+}
+.modal-types {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+
+
+.modal--abilities{
+    text-align: center;
+}
+.modal--abilities--list{
+    list-style: none;
+}
+@media screen and (min-width:280px) {
+    .modal-table th,
+.modal-table td {
+    padding: 10px 5px;
+    font-size: 10px;
+}
+}
+@media screen and (min-width:576px) {
+
+    .modal-table th,
+    .modal-table td {
+        font-size: 12px;
+    }
+    #modal--close{
+        top: 10px;
+    }
+    .modal{
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    .modal--pokemon{
+        width: 50%;
+    }
+    .modal--details{
+        width: 60%;
+    }
+}
